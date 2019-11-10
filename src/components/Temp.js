@@ -9,7 +9,7 @@ class Temp extends React.Component {
     
     
     render() {
-        CITY = this.props.city;
+        let CITY = this.props.city;
         console.log(CITY);
         return (
             <div>{CITY}</div>
