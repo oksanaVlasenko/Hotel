@@ -8,6 +8,7 @@ import "bootswatch/dist/lux/bootstrap.min.css";
 import './App.css';
 import Home from '../src/components/Home'
 import Form from '../src/components/Form'
+import { UserProvider } from '../src/components/Context';
 
 const Header = () => {
   return (
@@ -25,14 +26,16 @@ const Header = () => {
 class App extends React.Component {
   render() {
     return (
+      <UserProvider>
      <Router>
        <div>
          <Header />
-
+         
          <Route exact path='/' component={Home} />
          <Route path='/form' component={Form} />
        </div>
      </Router>
+     </UserProvider>
   );
   }
   

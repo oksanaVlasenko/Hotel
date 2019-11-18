@@ -1,4 +1,5 @@
 import React from 'react';
+import Hotel from './Hotel';
 
 
 class Temp extends React.Component {
@@ -6,17 +7,13 @@ class Temp extends React.Component {
         super(props);
        
     }
-    
-    
+     
     render() {
-        let CITY = this.props.city;
-        console.log(CITY);
         return (
-            <div>{CITY}</div>
+           <div></div>
         )
     }
 }
 
-export let CITY
-//export const CITY;
+
 export default Temp
